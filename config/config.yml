@@ -1,0 +1,25 @@
+# 应用配置（修改后需重启 dev/build 生效）
+
+# 应用名称（页面标题、顶栏显示）
+app:
+  name: 智能矿山 3D 传感器管理平台
+
+# 本服务 HTTP 监听端口（next dev / next start 均会读取）
+server:
+  port: 3000
+
+# SQL Server 连接配置
+database:
+  server: 172.17.17.138
+  port: 1433
+  user: sa
+  password: sa123.
+  database: gwjc1
+  encrypt: false
+  trustServerCertificate: true
+
+# 3D 场景
+scene:
+  distanceFactorEdit: 120   # 传感器/分站标签距离系数，编辑模式
+  distanceFactorBrowse: 116 # 传感器/分站标签距离系数，浏览模式
+  tunnelModelVersion: 1    # 更新 public/models/tunnel.glb 后请改大此值，避免缓存旧模型
